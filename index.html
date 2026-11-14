@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Özgürlük Sayacı</title>
+<meta name="description" content="MEB YLSY bursiyerleri için mecburi hizmet sayacı: kaç gün kaldı, bugün ayrılırsan ne ödersin.">
+<link rel="icon" href="icon.png">
+<style>
+:root { --bg: #f2f2f7; --card: #ffffff; --ink: #1c1c1e; --quiet: #5f5f66; --accent: #1b7f3b; --line: #e3e3e8; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #000000; --card: #1c1c1e; --ink: #f2f2f7; --quiet: #a9a9b2; --accent: #4cd471; --line: #2c2c2e; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 72px; height: 72px; border-radius: 16px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0; }
+h2 { font-size: 20px; margin: 0 0 8px; }
+p { margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+section { background: var(--card); border-radius: 16px; padding: 20px; margin-bottom: 16px; }
+a { color: var(--accent); }
+.quiet { color: var(--quiet); font-size: 15px; }
+footer { color: var(--quiet); font-size: 15px; padding: 8px 4px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <h1>Özgürlük Sayacı</h1>
+  </header>
+
+  <section>
+    <p>Mecburi hizmetin bitmesine kaç gün kaldı, bugün ayrılırsan ne ödersin?</p>
+    <p>Özgürlük Sayacı, MEB YLSY bursiyerleri için bir iPhone uygulamasıdır. Hizmet tarihlerini ve MEB'in masraf listesindeki borcunu girersin; uygulama kalan günü, kalan borcu Merkez Bankası'nın günlük kuruyla ve MEB'in taksit planını gösterir.</p>
+    <p class="quiet">Resmî bir hesap değildir. MEB ile bağı yoktur. Esas olan MEB'in borç bildirimidir.</p>
+  </section>
+
+  <section id="destek">
+    <h2>Destek</h2>
+    <p>Bir sorun, bir hata ya da bir öneri için: <a href="mailto:destek@dyoce.com?subject=%C3%96zg%C3%BCrl%C3%BCk%20Sayac%C4%B1">destek@dyoce.com</a></p>
+    <p class="quiet">Hesapla ilgili yazıyorsan hangi tarihte hangi rakamı gördüğünü ekle; borç bilgilerini göndermen gerekmez.</p>
+  </section>
+
+  <section>
+    <h2>Gizlilik</h2>
+    <p>Girdiğin tarihler ve tutarlar yalnız telefonunda durur. Ayrıntısı: <a href="gizlilik/">Gizlilik politikası</a></p>
+  </section>
+
+  <footer>Geliştirici: Cenk Dönmez</footer>
+</main>
+</body>
+</html>
